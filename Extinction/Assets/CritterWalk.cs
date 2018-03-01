@@ -29,6 +29,14 @@ public class CritterWalk : MonoBehaviour {
 		transform.eulerAngles = Vector3.Slerp(transform.eulerAngles, targetRotation, Time.deltaTime * directChange);
 		var forward = transform.TransformDirection(Vector3.forward);
 		controller.SimpleMove(forward * speed);
+		GameObject player = GameObject.Find ("Capsule");
+		Transform playerTransform = player.transform;
+		// get player position
+		Vector3 position = playerTransform.position;
+		if (postion == )
+		{
+			endMap();
+		}
 	}
  
 
@@ -39,6 +47,11 @@ public class CritterWalk : MonoBehaviour {
 			NewHeadingRoutine();
 			yield return new WaitForSeconds(directChange);
 		}
+	}
+
+	// stops at map end and turns
+	void endMap() {
+		targetRotation = new Vector3(0, 100, 0);
 	}
  
 	// Calculates a new direction to move towards.
