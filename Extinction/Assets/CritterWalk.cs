@@ -33,7 +33,6 @@ public class CritterWalk : MonoBehaviour {
  
 
 	// Repeatedly calculates a new direction to move towards.
-	// Use this instead of MonoBehaviour.InvokeRepeating so that the interval can be changed at runtime.
 	IEnumerator NewHeading ()
 	{
 		while (true) {
