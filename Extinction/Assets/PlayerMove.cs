@@ -11,7 +11,9 @@ public class PlayerMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		// other movement
 		var x = Input.GetAxis("Horizontal") * Time.deltaTime * 10.0f;
+		// zoom works
         var z = Input.GetAxis("Vertical") * Time.deltaTime * 10.0f;
 
         transform.Rotate(0, x, 0);
