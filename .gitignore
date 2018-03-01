@@ -18,7 +18,6 @@ obj/
 *.user
 *.unityproj
 *.booproj
-*.log
 
 # ============ #
 # OS generated #
