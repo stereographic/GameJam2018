@@ -2542,9 +2542,8 @@ Prefab:
       propertyPath: m_Name
       value: critterTwo
       objectReference: {fileID: 0}
-    - target: {fileID: 54668545773077948, guid: 284843552a39ff846b667d1102785844,
-        type: 2}
-      propertyPath: m_IsKinematic
+    - target: {fileID: 1113932856224468, guid: 284843552a39ff846b667d1102785844, type: 2}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5485,6 +5484,28 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: a834527aa1ce23a40857bdc293825f3a, type: 3}
+--- !u!1 &599390473 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1513055776830314, guid: 6e622791086f63144805cce4dbc36815,
+    type: 2}
+  m_PrefabInternal: {fileID: 1442807427}
+--- !u!143 &599390477
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 599390473}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 0.021347854
+  m_Radius: 0.037636362
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &603884784
 Prefab:
   m_ObjectHideFlags: 0
@@ -6156,6 +6177,10 @@ Prefab:
     - target: {fileID: 1729704108359390, guid: 7aa4fba8d2091b345811a4c292680a62, type: 2}
       propertyPath: m_Name
       value: critterOne
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729704108359390, guid: 7aa4fba8d2091b345811a4c292680a62, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7aa4fba8d2091b345811a4c292680a62, type: 2}
@@ -8462,13 +8487,15 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 951979681}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7099451ef976b342b220e2c940d6572, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   meteor: {fileID: 1163343674335418, guid: e5c2744c3a653c841913f24df665019b, type: 2}
-  Plague: {fileID: 0}
+  plague: {fileID: 0}
+  laser: {fileID: 0}
+  _current: 1
 --- !u!4 &951979683
 Transform:
   m_ObjectHideFlags: 0
@@ -12204,9 +12231,13 @@ Prefab:
       propertyPath: m_Name
       value: critterThree
       objectReference: {fileID: 0}
-    - target: {fileID: 54553083602902244, guid: 6e622791086f63144805cce4dbc36815,
+    - target: {fileID: 1822449233514484, guid: 6e622791086f63144805cce4dbc36815, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114625428836607312, guid: 6e622791086f63144805cce4dbc36815,
         type: 2}
-      propertyPath: m_IsKinematic
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -21,7 +21,8 @@ GameObject:
   - component: {fileID: 4964675138616368}
   - component: {fileID: 33097027628028780}
   - component: {fileID: 23364893343054608}
-  m_Layer: 0
+  - component: {fileID: 143234594656922390}
+  m_Layer: 8
   m_Name: critter1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,13 +42,13 @@ GameObject:
   - component: {fileID: 114790855170567472}
   - component: {fileID: 114139085806216996}
   - component: {fileID: 54229868475632440}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4322069015711566
 Transform:
   m_ObjectHideFlags: 1
@@ -173,6 +174,23 @@ MonoBehaviour:
   burstVal: 5
   _myObject: {fileID: 1729704108359390}
   _type: constant
+--- !u!143 &143234594656922390
+CharacterController:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1440737367966000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 0.021347854
+  m_Radius: 0.037636362
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!143 &143993484131559794
 CharacterController:
   m_ObjectHideFlags: 1
