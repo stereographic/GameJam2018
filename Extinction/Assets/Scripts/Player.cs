@@ -41,7 +41,7 @@ public class Player : MonoBehaviour {
 		// stop x
 		pos = transform.position;
 		transform.position = new Vector3(
-			Mathf.Clamp(pos.x, -135, 95),
+			Mathf.Clamp(pos.x, -155, 84),
 			pos.y,
 			pos.z
 		);
@@ -50,7 +50,7 @@ public class Player : MonoBehaviour {
 		transform.position = new Vector3(
 			pos.x,
 			pos.y,
-			Mathf.Clamp(pos.z, -200, 135)
+			Mathf.Clamp(pos.z, -130, 142)
 		);
 		
 		transform.Translate(0, y, 0);
