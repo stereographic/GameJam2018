@@ -56,8 +56,6 @@
      <Compile Include="Assets\Scripts\Duplicator.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Meteor.cs" />
-     <Compile Include="Assets\Scripts\PlagueScripts\CritterWalk.cs" />
-     <Compile Include="Assets\Scripts\PlagueScripts\Duplicator.cs" />
      <Compile Include="Assets\Scripts\PlagueScripts\Plagueis.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\PlayerAbilities.cs" />

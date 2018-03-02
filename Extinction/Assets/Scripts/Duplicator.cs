@@ -11,10 +11,15 @@ public class Duplicator : MonoBehaviour {
 	public GameObject _myObject;
 	public string _type = "constant";
 	private int ran = 0;
+	private CritterWalk plag;
 	
 	void Start () {
 
-		InvokeRepeating("doubleCritter", initial, after);
+		plag = this.gameObject.GetComponent<CritterWalk>();
+		if (plag.getIsPlagueis() != true)
+		{
+			InvokeRepeating("doubleCritter", initial, after);
+		}
 	}
 
 	// ----------------------------------------- gets/sets
@@ -49,7 +54,15 @@ public class Duplicator : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-				
+		if (plag.getIsPlagueis() == true)
+		{
+			Debug.Log("infected");
+			Start();
+			
+		}
+		if(ran >= 5) {
+			Debug.Log("dubed 5 times");
+		}	
 	}
 
 	// ----------------------------------------- private methods
