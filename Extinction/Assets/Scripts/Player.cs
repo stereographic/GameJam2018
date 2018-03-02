@@ -4,34 +4,58 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
-	private Player instance;
-	private int power;
-	private Text txtPower;
-
-	//private constructor
-	private Player(){
-		this.power = 0;	
-	}
-
-	//get instance
-	public Player getInstance(){
-		return instance;
-	}
+	public int power;
+	public Text txtPower;
 
 	// Use this for initialization
 	void Start () {
-		instance = new Player();
-		instance.txtPower = GameObject.Find("lblPower").GetComponent<Text>();
+		txtPower = GameObject.Find("lblPower").GetComponent<Text>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		instance.power++;
-		instance.txtPower.text = "Power: " + instance.power.ToString();
+		move();
+		power++;
+		txtPower.text = "Power: " + power.ToString();
 	}
 
 	//public methods
 	public int getPower(){
-		return instance.power;
+		return power;
+	}
+
+	public void move(){
+		// rotate
+		var x = Input.GetAxis("Horizontal") * Time.deltaTime * 50.0f;
+		// movement speed
+        var z = Input.GetAxis("Vertical") * Time.deltaTime * 50.0f;
+		// zoom
+		var y = Input.GetAxis("Mouse ScrollWheel") * -Time.deltaTime * 500.0f;
+		// stop at 300 y or 20 y
+		var pos = transform.position;
+		transform.position = new Vector3(
+			pos.x,
+			Mathf.Clamp(pos.y, -20, 300),
+			pos.z
+		);
+		// stop x
+		pos = transform.position;
+		transform.position = new Vector3(
+			Mathf.Clamp(pos.x, -135, 95),
+			pos.y,
+			pos.z
+		);
+		// stop z
+		pos = transform.position;
+		transform.position = new Vector3(
+			pos.x,
+			pos.y,
+			Mathf.Clamp(pos.z, -200, 135)
+		);
+		
+		transform.Translate(0, y, 0);
+
+        transform.Translate(x, 0, 0);
+        transform.Translate(0, 0, z);
 	}
 }
