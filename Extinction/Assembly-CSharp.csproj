@@ -51,9 +51,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CameraDisplay.cs" />
      <Compile Include="Assets\CritterWalk.cs" />
      <Compile Include="Assets\GameManager.cs" />
      <Compile Include="Assets\PlayerMove.cs" />
+     <Compile Include="Assets\redirectOutput.cs" />
      <Compile Include="Assets\Singleton.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
