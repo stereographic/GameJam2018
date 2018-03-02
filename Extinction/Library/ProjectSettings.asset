@@ -636,13 +636,13 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
-    Collab: 1
+    Collab: 0
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 1c3db9e4-53cc-408a-a4c8-7bf9c375a041
-  projectName: Extinction
-  organizationId: andehcrowe
+  cloudProjectId: ae6ace36-acdb-4bcc-844d-f64c1f0999bb
+  projectName: Extinction (1)
+  organizationId: enternamehere19
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
