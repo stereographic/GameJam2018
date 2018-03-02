@@ -29,6 +29,7 @@ public class CritterWalk : MonoBehaviour {
 		transform.eulerAngles = Vector3.Slerp(transform.eulerAngles, targetRotation, Time.deltaTime * directChange);
 		var forward = transform.TransformDirection(Vector3.forward);
 		controller.SimpleMove(forward * speed);
+		limitMove();
 	}
  
 
@@ -48,5 +49,23 @@ public class CritterWalk : MonoBehaviour {
 		var ceil  = Mathf.Clamp(heading + maxHeadChange, 0, 360);
 		heading = Random.Range(floor, ceil);
 		targetRotation = new Vector3(0, heading, 0);
+	}
+
+	void limitMove ()
+	{
+		// stop x
+		var pos = transform.position;
+		transform.position = new Vector3(
+			Mathf.Clamp(pos.x, -135, 95),
+			pos.y,
+			pos.z
+		);
+		// stop z
+		pos = transform.position;
+		transform.position = new Vector3(
+			pos.x,
+			pos.y,
+			Mathf.Clamp(pos.z, -150, 135)
+		);
 	}
 }
