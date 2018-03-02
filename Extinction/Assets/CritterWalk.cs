@@ -29,9 +29,6 @@ public class CritterWalk : MonoBehaviour {
 		transform.eulerAngles = Vector3.Slerp(transform.eulerAngles, targetRotation, Time.deltaTime * directChange);
 		var forward = transform.TransformDirection(Vector3.forward);
 		controller.SimpleMove(forward * speed);
-		Transform playerTransform = this.transform;
-		// get player position
-		Vector3 position = playerTransform.position;
 	}
  
 
