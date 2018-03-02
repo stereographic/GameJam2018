@@ -11,8 +11,11 @@ public class Duplicator : MonoBehaviour {
 	public GameObject _myObject;
 	public string _type = "constant";
 	private int ran = 0;
+	private GameManager tickies;
 	
 	void Start () {
+
+		tickies = new GameManager();
 
 		InvokeRepeating("doubleCritter", initial, after);
 	}
@@ -50,7 +53,9 @@ public class Duplicator : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(ran >= 5) {
-			Debug.Log("dubed 5 times");
+			//Debug.Log("dubed 5 times");
+			tickies.addTickies();
+			ran = 0;
 		}
 		
 	}
