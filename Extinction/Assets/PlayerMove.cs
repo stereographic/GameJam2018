@@ -15,6 +15,8 @@ public class PlayerMove : MonoBehaviour {
 		var x = Input.GetAxis("Horizontal") * Time.deltaTime * 50.0f;
 		// movement speed
         var z = Input.GetAxis("Vertical") * Time.deltaTime * 50.0f;
+		// zoom
+		var y = Input.GetAxis("") * Time.deltaTime * 10.0f;
 
         transform.Translate(x, 0, 0);
         transform.Translate(0, 0, z);
