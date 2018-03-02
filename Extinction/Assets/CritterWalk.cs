@@ -51,6 +51,7 @@ public class CritterWalk : MonoBehaviour {
 		targetRotation = new Vector3(0, heading, 0);
 	}
 
+	// stops critter if at end of map
 	void limitMove ()
 	{
 		// stop x
