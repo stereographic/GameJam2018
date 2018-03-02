@@ -32,11 +32,6 @@ public class CritterWalk : MonoBehaviour {
 		Transform playerTransform = this.transform;
 		// get player position
 		Vector3 position = playerTransform.position;
-		// z 140 x 140 x-130 z-150
-		if (position.z == 140 || position.z == -130 || position.x == 140 || position.x == -150)
-		{
-			endMap();
-		}
 	}
  
 
@@ -47,11 +42,6 @@ public class CritterWalk : MonoBehaviour {
 			NewHeadingRoutine();
 			yield return new WaitForSeconds(directChange);
 		}
-	}
-
-	// stops at map end and turns
-	void endMap() {
-		targetRotation = new Vector3(0, 100, 0);
 	}
  
 	// Calculates a new direction to move towards.
