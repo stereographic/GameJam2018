@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager> {
 
+
+	public int blueCount;
+
+
 	private float _timeRemaining;
 
 	public float TimeRemaining
@@ -30,5 +34,9 @@ public class GameManager : Singleton<GameManager> {
 			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 			TimeRemaining = maxTime;
 		}
+
+		GameObject[] npcs = GameObject.FindGameObjectsWithTag("NPC");
+		blueCount = npcs.Length;
+		Debug.Log("Critter Count " + blueCount);
 	}
 }

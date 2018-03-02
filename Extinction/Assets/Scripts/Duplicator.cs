@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Duplicator : MonoBehaviour {
 
-	public float _initial = 2f;
-	public float _after = 2f;
+	public float _initial = 5f;
+	public float _after = 5f;
 	public float _chance = 0.5f;
-	public int burstVal = 5;
+	public int burstVal = 1;
 	public GameObject _myObject;
 	public string _type = "constant";
 	private int ran = 0;
@@ -50,7 +50,7 @@ public class Duplicator : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(ran >= 5) {
-			Debug.Log("dubed 5 times");
+			// Debug.Log("dubed 5 times");
 		}
 		
 	}
@@ -59,8 +59,11 @@ public class Duplicator : MonoBehaviour {
 	void doubleCritter() {
 		
 		if(type == "burst"){
-			for(int i = 0; i < burstVal; i++) {
-				GameObject newObj = Instantiate(myObject, transform.position, transform.rotation);
+			float rand1 = Random.Range(0f,1f);
+			if (rand1 <= chance) {
+				for(int i = 0; i < burstVal; i++) {
+					GameObject newObj = Instantiate(myObject, transform.position, transform.rotation);
+				}
 			}
 		} else {
 			float rand = Random.Range(0f,1f);

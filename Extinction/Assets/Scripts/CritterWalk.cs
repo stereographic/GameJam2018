@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class CritterWalk : MonoBehaviour {
 
-    public float speed = 5;
+    public float speed = 10;
 	public float directChange = 1;
 	public float maxHeadChange = 30;
  
@@ -57,7 +57,7 @@ public class CritterWalk : MonoBehaviour {
 		// stop x
 		var pos = transform.position;
 		transform.position = new Vector3(
-			Mathf.Clamp(pos.x, -135, 95),
+			Mathf.Clamp(pos.x, -200, 95),
 			pos.y,
 			pos.z
 		);
