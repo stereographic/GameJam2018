@@ -8,6 +8,8 @@ public class CritterWalk : MonoBehaviour {
     public float speed = 5;
 	public float directChange = 1;
 	public float maxHeadChange = 30;
+	public bool isPlagueis;
+	private Plagueis plague;
  
 	CharacterController controller;
 	float heading;
@@ -20,6 +22,7 @@ public class CritterWalk : MonoBehaviour {
 		// Set random initial rotation
 		heading = Random.Range(0, 360);
 		transform.eulerAngles = new Vector3(0, heading, 0);
+		plague = new Plagueis();
  
 		StartCoroutine(NewHeading());
 	}
@@ -68,5 +71,25 @@ public class CritterWalk : MonoBehaviour {
 			pos.y,
 			Mathf.Clamp(pos.z, -150, 135)
 		);
+	}
+	void OnCollisionEnter (Collision col)
+    {
+		Debug.Log("collision");
+        if(col.gameObject.name.Contains("critter"))
+        {	
+			var colplag = col.gameObject.GetComponent<CritterWalk>();
+            if (colplag.getIsPlagueis() == true)
+			{
+				isPlagueis = true;
+				plague.setPlague();
+			}
+        }
+    }
+
+	
+
+	public bool getIsPlagueis()
+	{
+		return isPlagueis;
 	}
 }
