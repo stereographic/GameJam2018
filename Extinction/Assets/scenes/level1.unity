@@ -273,26 +273,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300012, guid: 9fae9f7a7664c4c47a4fd4e9eedf6d6c, type: 3}
---- !u!1 &6288226 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1729704108359390, guid: 7aa4fba8d2091b345811a4c292680a62,
-    type: 2}
-  m_PrefabInternal: {fileID: 688114252}
---- !u!54 &6288232
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 6288226}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
 --- !u!1001 &6750029
 Prefab:
   m_ObjectHideFlags: 0
@@ -1960,26 +1940,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300012, guid: 9fae9f7a7664c4c47a4fd4e9eedf6d6c, type: 3}
---- !u!1 &222851405 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1822449233514484, guid: 6e622791086f63144805cce4dbc36815,
-    type: 2}
-  m_PrefabInternal: {fileID: 1442807427}
---- !u!54 &222851411
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 222851405}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
 --- !u!1001 &228025776
 Prefab:
   m_ObjectHideFlags: 0
@@ -2582,20 +2542,10 @@ Prefab:
       propertyPath: m_Name
       value: critterTwo
       objectReference: {fileID: 0}
-    - target: {fileID: 143241159850260432, guid: 284843552a39ff846b667d1102785844,
+    - target: {fileID: 54668545773077948, guid: 284843552a39ff846b667d1102785844,
         type: 2}
-      propertyPath: m_Center.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 143241159850260432, guid: 284843552a39ff846b667d1102785844,
-        type: 2}
-      propertyPath: m_Center.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 143241159850260432, guid: 284843552a39ff846b667d1102785844,
-        type: 2}
-      propertyPath: m_Radius
-      value: 0
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 284843552a39ff846b667d1102785844, type: 2}
@@ -6206,21 +6156,6 @@ Prefab:
     - target: {fileID: 1729704108359390, guid: 7aa4fba8d2091b345811a4c292680a62, type: 2}
       propertyPath: m_Name
       value: critterOne
-      objectReference: {fileID: 0}
-    - target: {fileID: 143993484131559794, guid: 7aa4fba8d2091b345811a4c292680a62,
-        type: 2}
-      propertyPath: m_Center.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 143993484131559794, guid: 7aa4fba8d2091b345811a4c292680a62,
-        type: 2}
-      propertyPath: m_Center.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 143993484131559794, guid: 7aa4fba8d2091b345811a4c292680a62,
-        type: 2}
-      propertyPath: m_Radius
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7aa4fba8d2091b345811a4c292680a62, type: 2}
@@ -12269,20 +12204,10 @@ Prefab:
       propertyPath: m_Name
       value: critterThree
       objectReference: {fileID: 0}
-    - target: {fileID: 143523788315712356, guid: 6e622791086f63144805cce4dbc36815,
+    - target: {fileID: 54553083602902244, guid: 6e622791086f63144805cce4dbc36815,
         type: 2}
-      propertyPath: m_Radius
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 143523788315712356, guid: 6e622791086f63144805cce4dbc36815,
-        type: 2}
-      propertyPath: m_Center.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 143523788315712356, guid: 6e622791086f63144805cce4dbc36815,
-        type: 2}
-      propertyPath: m_Center.z
-      value: 0
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6e622791086f63144805cce4dbc36815, type: 2}
@@ -14849,26 +14774,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 24a759921bedc2541881a0535a7bfcc8, type: 3}
---- !u!1 &1789533700 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1113932856224468, guid: 284843552a39ff846b667d1102785844,
-    type: 2}
-  m_PrefabInternal: {fileID: 271338953}
---- !u!54 &1789533706
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1789533700}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
 --- !u!1001 &1792858152
 Prefab:
   m_ObjectHideFlags: 0

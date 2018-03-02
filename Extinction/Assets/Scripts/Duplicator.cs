@@ -57,12 +57,12 @@ public class Duplicator : MonoBehaviour {
 		
 		if(type == "burst"){
 			for(int i = 0; i < burstVal; i++) {
-				GameObject newObj = Instantiate(myObject, new Vector3(transform.position.x+5, transform.position.y, transform.position.z + 5), transform.rotation);
+				GameObject newObj = Instantiate(myObject, new Vector3(transform.position.x+5, transform.position.y + 10, transform.position.z + 5), transform.rotation);
 			}
 		} else {
 			float rand = Random.Range(0f,1f);
 			if (rand >= chance) {
-				GameObject newObj = Instantiate(myObject, new Vector3(transform.position.x+5, transform.position.y, transform.position.z + 5), transform.rotation);
+				GameObject newObj = Instantiate(myObject, new Vector3(transform.position.x+5, transform.position.y + 10, transform.position.z + 5), transform.rotation);
 				ran++;
 			}
 		}
