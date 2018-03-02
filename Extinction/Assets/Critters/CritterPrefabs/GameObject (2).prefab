@@ -129,7 +129,7 @@ MonoBehaviour:
   _after: 2
   _chance: 0.5
   burstVal: 5
-  _myObject: {fileID: 0}
+  _myObject: {fileID: 1113932856224468}
   _type: constant
 --- !u!114 &114418495572110988
 MonoBehaviour:

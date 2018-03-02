@@ -143,7 +143,7 @@ MonoBehaviour:
   _after: 2
   _chance: 0.5
   burstVal: 5
-  _myObject: {fileID: 0}
+  _myObject: {fileID: 1729704108359390}
   _type: constant
 --- !u!143 &143993484131559794
 CharacterController:
