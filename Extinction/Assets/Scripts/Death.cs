@@ -17,6 +17,7 @@ public class Death : MonoBehaviour {
 		
 	}
 
+	// timer till death
 	private IEnumerator Countdown(int time){
     while(time>0){
         Debug.Log(time--);
