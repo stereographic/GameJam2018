@@ -56,10 +56,14 @@
      <Compile Include="Assets\Scripts\Duplicator.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Meteor.cs" />
+     <Compile Include="Assets\Scripts\PlagueScripts\CritterWalk.cs" />
+     <Compile Include="Assets\Scripts\PlagueScripts\Duplicator.cs" />
+     <Compile Include="Assets\Scripts\PlagueScripts\Plagueis.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\PlayerAbilities.cs" />
      <Compile Include="Assets\Scripts\PlayerMove.cs" />
      <Compile Include="Assets\Scripts\Singleton.cs" />
+     <Compile Include="Assets\Scripts\TitleScreen.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
