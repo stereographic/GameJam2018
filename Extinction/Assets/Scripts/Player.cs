@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
 	private const int POP = 0;
@@ -49,6 +50,7 @@ public class Player : MonoBehaviour {
 		{
 			IsWin = true;
 			Debug.Log("Win!!!!!!");
+			SceneManager.LoadScene("Winner");
 		}
 
 		if (Population > 0) 
@@ -60,6 +62,7 @@ public class Player : MonoBehaviour {
 		{
 			IsLose = true;
 			Debug.Log("Lose!!!!!!");
+			SceneManager.LoadScene("Loser");
 		}
 
 		if (Input.GetKey("escape")){

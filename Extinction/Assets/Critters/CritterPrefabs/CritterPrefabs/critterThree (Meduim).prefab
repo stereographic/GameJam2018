@@ -145,10 +145,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initial: 2
   _after: 5
-  _chance: 0.75
+  _chance: 0.5
   burstVal: 5
   _myObject: {fileID: 1626542592327110}
-  _type: constant
+  _type: burst
 --- !u!114 &114505156886403186
 MonoBehaviour:
   m_ObjectHideFlags: 1
