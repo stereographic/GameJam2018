@@ -51,6 +51,7 @@ public class Player : MonoBehaviour {
 			IsWin = true;
 			Debug.Log("Win!!!!!!");
 			SceneManager.LoadScene("Winner");
+			Population = 0;
 		}
 
 		if (Population > 0) 
@@ -58,11 +59,19 @@ public class Player : MonoBehaviour {
 			IsWin = false;
 		}
 
-		if (LoseCount > 1000)
+		/*if (LoseCount > 1000)
 		{
 			IsLose = true;
 			Debug.Log("Lose!!!!!!");
 			SceneManager.LoadScene("Loser");
+		}*/
+
+		if (Population > 200)
+		{
+			IsLose = true;
+			Debug.Log("Lose!!!!!!");
+			SceneManager.LoadScene("Loser");
+			Population = 0;
 		}
 
 		if (Input.GetKey("escape")){
