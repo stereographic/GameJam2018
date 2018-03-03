@@ -16,6 +16,7 @@ public class Player : MonoBehaviour {
 
 	public static float population;
 	public GameObject quitScreen;
+	public static float loseCount;
 
 	private Vector3 position;
 	private LayerMask layerMask;
@@ -29,6 +30,8 @@ public class Player : MonoBehaviour {
 	private Camera c;
 	public int power;
 	public Text txtPower;
+	public bool isWin = false;
+	public bool isLose = false;
 
 	// Use this for initialization
 	void Start () {
@@ -42,6 +45,23 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (Population <= 0) 
+		{
+			IsWin = true;
+			Debug.Log("Win!!!!!!");
+		}
+
+		if (Population > 0) 
+		{
+			IsWin = false;
+		}
+
+		if (LoseCount > 1000)
+		{
+			IsLose = true;
+			Debug.Log("Lose!!!!!!");
+		}
+
 		if (Input.GetKey("escape")){
 			//SceneManager.LoadScene("QuitScreen");
 			quitScreen.SetActive(true);
@@ -104,6 +124,30 @@ public class Player : MonoBehaviour {
         get { return population;}
         set { population = value;}
     }
+
+	public float LoseCount
+    {
+        get { return loseCount;}
+        set { loseCount = value;}
+    }
+
+	public bool IsWin
+    {
+        get { return isWin;}
+        set { isWin = value;}
+    }
+
+	public bool IsLose
+    {
+        get { return isLose;}
+        set { isLose = value;}
+    }
+
+	public float Population
+    {
+        get { return population;}
+        set { population = value;}
+    }
 	
 	public int current {
 		get { return _current; }
@@ -153,6 +197,8 @@ public class Player : MonoBehaviour {
 	void kill(GameObject one) {
 		power += 5;
 		parent = target.transform.parent.gameObject;
+		Player.population = Player.population -1;
+		Debug.Log(Player.population);
 		Debug.Log(target);
 		Destroy(target);
 		Destroy(parent);

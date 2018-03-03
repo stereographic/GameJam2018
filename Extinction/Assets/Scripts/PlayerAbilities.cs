@@ -95,7 +95,8 @@ public class PlayerAbilities : MonoBehaviour {
 
 	void kill(GameObject one) {
 		parent = target.transform.parent.gameObject;
-		Player.population --;
+		Player.population = Player.population -1;
+		Debug.Log(Player.population);
 		Debug.Log(target);
 		Destroy(target);
 		Destroy(parent);
