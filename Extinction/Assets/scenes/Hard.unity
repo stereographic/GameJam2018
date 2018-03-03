@@ -4750,7 +4750,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4620254349415808, guid: 9111eecd4d20bf54d956bfb1c3d848c2, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9111eecd4d20bf54d956bfb1c3d848c2, type: 2}
@@ -4792,7 +4792,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4698857984727460, guid: b961b6302cace3b4c83dde4a384563ec, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b961b6302cace3b4c83dde4a384563ec, type: 2}
@@ -8926,7 +8926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quitScreen: {fileID: 0}
-  meteor: {fileID: 1163343674335418, guid: e5c2744c3a653c841913f24df665019b, type: 2}
+  meteor: {fileID: 1245378858196944, guid: 57f6b71249e465e48b6292dbbf045e61, type: 2}
   plague: {fileID: 0}
   laser: {fileID: 1816050087067506, guid: b366167914fbc11418e38f7c5de9b5dc, type: 2}
   _current: 0
@@ -10834,11 +10834,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249c276f3b18b9b4399c951ede049795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  critterOne: {fileID: 1001044916979974, guid: cd49aaec8e17b6d43bd6364af7a0097f, type: 2}
-  critterTwo: {fileID: 1426431737109234, guid: 9111eecd4d20bf54d956bfb1c3d848c2, type: 2}
-  critterThree: {fileID: 1412021449854742, guid: b961b6302cace3b4c83dde4a384563ec,
-    type: 2}
-  density: 7
 --- !u!114 &1117060319
 MonoBehaviour:
   m_ObjectHideFlags: 0

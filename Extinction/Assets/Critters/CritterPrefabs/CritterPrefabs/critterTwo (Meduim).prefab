@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 54994285781827324}
   m_Layer: 8
   m_Name: critterTwo (Meduim)
-  m_TagString: Untagged
+  m_TagString: critter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69,7 +69,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1598284725468090}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.57, y: 16.69, z: -59.25}
+  m_LocalPosition: {x: -116.20971, y: 16, z: 92.39426}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4174161075089410}

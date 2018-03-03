@@ -8842,7 +8842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quitScreen: {fileID: 0}
-  meteor: {fileID: 1163343674335418, guid: e5c2744c3a653c841913f24df665019b, type: 2}
+  meteor: {fileID: 1245378858196944, guid: 57f6b71249e465e48b6292dbbf045e61, type: 2}
   plague: {fileID: 0}
   laser: {fileID: 1816050087067506, guid: b366167914fbc11418e38f7c5de9b5dc, type: 2}
   _current: 0
