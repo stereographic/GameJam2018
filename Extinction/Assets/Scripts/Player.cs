@@ -15,9 +15,11 @@ public class Player : MonoBehaviour {
 	private const int METEOR_COST = 20;
 
 	public static float population;
+	public GameObject quitScreen;
 
 	private Vector3 position;
 	private LayerMask layerMask;
+	private LayerMask terrainLayer;
 	public GameObject meteor;
 	public GameObject plague;
 	public GameObject laser;
@@ -27,35 +29,37 @@ public class Player : MonoBehaviour {
 	private Camera c;
 	public int power;
 	public Text txtPower;
-	public GameObject quitScreen;
 
 	// Use this for initialization
 	void Start () {
 		c = Camera.main;
 		layerMask = LayerMask.GetMask("critter");
+		terrainLayer = LayerMask.GetMask("terrain");
 		txtPower = GameObject.Find("lblPower").GetComponent<Text>();
-
 		quitScreen = GameObject.Find("QuitScreen");
 		quitScreen.SetActive(false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
 		if (Input.GetKey("escape")){
-            //SceneManager.LoadScene("QuitScreen");
+			//SceneManager.LoadScene("QuitScreen");
 			quitScreen.SetActive(true);
 			Time.timeScale = 0;
 		}
 
-		position = c.ScreenToWorldPoint(new Vector3(
-			Input.mousePosition.x,
-			Input.mousePosition.y,
-			20
-		));
+		
 		if(current == LASER) {
 			if(Input.GetMouseButton(0)) {
 				if(power >= LASER_COST){
+					Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); 
+					RaycastHit hit;
+					GameObject terrain = GameObject.Find("Terrain_2");
+					if (terrain.GetComponent<Collider>().Raycast(ray, out hit, Mathf.Infinity)) 
+					{
+						Debug.DrawLine(ray.origin, hit.point);
+						position = hit.point;
+					}
 					Debug.Log("LASERING");
 					Laser(position);
 				}
@@ -65,6 +69,15 @@ public class Player : MonoBehaviour {
 				switch (current) {
 					case METEOR:
 						if(power >= METEOR_COST){
+							Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); 
+							RaycastHit hit;
+							GameObject terrain = GameObject.Find("Terrain_2");
+							if (terrain.GetComponent<Collider>().Raycast(ray, out hit, Mathf.Infinity)) 
+							{
+								Debug.DrawLine(ray.origin, hit.point);
+								position = hit.point;
+							}
+							position = new Vector3(position.x, position.y + 100, position.z);
 							Meteor(position);
 							break;
 						}
@@ -115,6 +128,7 @@ public class Player : MonoBehaviour {
 	}
 
 	void Laser(Vector3 position) {
+		Instantiate(laser, position, gameObject.transform.rotation);
 		target = GetClickedGameObject();
 		power -= LASER_COST;
 		if(target != null){

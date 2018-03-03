@@ -8848,11 +8848,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   meteor: {fileID: 1163343674335418, guid: e5c2744c3a653c841913f24df665019b, type: 2}
   plague: {fileID: 0}
-  laser: {fileID: 0}
+  laser: {fileID: 1816050087067506, guid: b366167914fbc11418e38f7c5de9b5dc, type: 2}
   _current: 0
-  power: 0
+  power: 10
   txtPower: {fileID: 307768353}
-  quitScreen: {fileID: 0}
 --- !u!1 &952111437
 GameObject:
   m_ObjectHideFlags: 0
