@@ -2810,6 +2810,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 54668545773077948, guid: 284843552a39ff846b667d1102785844,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 284843552a39ff846b667d1102785844, type: 2}
   m_IsPrefabParent: 0
@@ -6346,6 +6351,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 54229868475632440, guid: 7aa4fba8d2091b345811a4c292680a62,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7aa4fba8d2091b345811a4c292680a62, type: 2}
   m_IsPrefabParent: 0
@@ -8846,11 +8856,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d5d3868ad53c02418c4694d9902116d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  quitScreen: {fileID: 0}
   meteor: {fileID: 1163343674335418, guid: e5c2744c3a653c841913f24df665019b, type: 2}
   plague: {fileID: 0}
   laser: {fileID: 1816050087067506, guid: b366167914fbc11418e38f7c5de9b5dc, type: 2}
   _current: 0
-  power: 10
+  power: 10000
   txtPower: {fileID: 307768353}
 --- !u!1 &952111437
 GameObject:
@@ -12773,6 +12784,21 @@ Prefab:
     - target: {fileID: 114625428836607312, guid: 6e622791086f63144805cce4dbc36815,
         type: 2}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54553083602902244, guid: 6e622791086f63144805cce4dbc36815,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114248978065075046, guid: 6e622791086f63144805cce4dbc36815,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54553083602902244, guid: 6e622791086f63144805cce4dbc36815,
+        type: 2}
+      propertyPath: m_UseGravity
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

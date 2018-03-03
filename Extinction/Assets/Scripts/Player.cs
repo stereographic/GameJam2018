@@ -156,7 +156,9 @@ public class Player : MonoBehaviour {
 
 	// --------------------------------- private methods
 	void Meteor (Vector3 position) {
-		Instantiate(meteor, position, gameObject.transform.rotation);
+		Vector3 meteorPosition = new Vector3(position.x + 50, position.y, position.z);
+		GameObject meteorObject = Instantiate(meteor, meteorPosition, gameObject.transform.rotation);
+		meteorObject.GetComponent<Rigidbody>().velocity = new Vector3(-100,-200,0);
 		power -= METEOR_COST;
 	}
 
@@ -173,6 +175,7 @@ public class Player : MonoBehaviour {
 
 	void Laser(Vector3 position) {
 		Instantiate(laser, position, gameObject.transform.rotation);
+		Instantiate(laser.GetComponent<Laser>().fireBall, position, gameObject.transform.rotation);
 		target = GetClickedGameObject();
 		power -= LASER_COST;
 		if(target != null){
