@@ -5604,7 +5604,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 612838771}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 951979684}
+        m_MethodName: changeWeapon
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &612838771
@@ -6037,11 +6048,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4322069015711566, guid: 7aa4fba8d2091b345811a4c292680a62, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.22
+      value: 11.3
       objectReference: {fileID: 0}
     - target: {fileID: 4322069015711566, guid: 7aa4fba8d2091b345811a4c292680a62, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -154.8
+      value: -125.1
       objectReference: {fileID: 0}
     - target: {fileID: 4322069015711566, guid: 7aa4fba8d2091b345811a4c292680a62, type: 2}
       propertyPath: m_LocalRotation.x
@@ -8288,7 +8299,6 @@ GameObject:
   m_Component:
   - component: {fileID: 951979683}
   - component: {fileID: 951979684}
-  - component: {fileID: 951979682}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -8296,21 +8306,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &951979682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 951979681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7099451ef976b342b220e2c940d6572, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  meteor: {fileID: 1163343674335418, guid: e5c2744c3a653c841913f24df665019b, type: 2}
-  plague: {fileID: 0}
-  laser: {fileID: 0}
-  _current: 1
 --- !u!4 &951979683
 Transform:
   m_ObjectHideFlags: 0
@@ -8336,6 +8331,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d5d3868ad53c02418c4694d9902116d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  meteor: {fileID: 1163343674335418, guid: e5c2744c3a653c841913f24df665019b, type: 2}
+  plague: {fileID: 0}
+  laser: {fileID: 0}
+  _current: 0
   power: 0
   txtPower: {fileID: 307768353}
 --- !u!1001 &952220848
@@ -9015,7 +9014,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1035648541}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 951979684}
+        m_MethodName: changeWeapon
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1035648541
@@ -12432,7 +12442,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1534054575}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 951979684}
+        m_MethodName: changeWeapon
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1534054575
@@ -16651,7 +16672,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1988455936}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 951979684}
+        m_MethodName: changeWeapon
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1988455936
