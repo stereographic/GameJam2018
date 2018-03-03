@@ -5,7 +5,7 @@ using UnityEngine;
 public class Meteor : MonoBehaviour {
 
 	public GameObject myObject;
-	public float blastRadius = 100f;
+	public int blastRadius = 50;
 	// Use this for initialization
 	void Start () {
 		
@@ -28,12 +28,11 @@ public class Meteor : MonoBehaviour {
 
 	void OnMeteorExplode() {
 		GameObject[] critters = GameObject.FindGameObjectsWithTag("critter");
-             foreach (var critter in critters) {
-                       if(blastRadius >= Vector3.Distance(transform.position, critter.transform.position)) {
-                                 
-                                Player.population = Player.population -1;
-								Destroy(critter);
-                       }
-             }
+		foreach (var critter in critters) {
+			if(blastRadius >= Vector3.Distance(transform.position, critter.transform.position)) {	
+				Player.population = Player.population -1;
+				Destroy(critter);
+			}
+		}
 	}
 }

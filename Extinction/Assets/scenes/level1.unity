@@ -2445,7 +2445,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4980703050761830, guid: 64407c1aefcb9774f9cb095bdafe8ccc, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64407c1aefcb9774f9cb095bdafe8ccc, type: 2}
@@ -4468,7 +4468,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4607064093812814, guid: ca09fe076d4bbf342909a3a8f5373a2c, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ca09fe076d4bbf342909a3a8f5373a2c, type: 2}
@@ -8888,7 +8888,7 @@ MonoBehaviour:
   plague: {fileID: 0}
   laser: {fileID: 1816050087067506, guid: b366167914fbc11418e38f7c5de9b5dc, type: 2}
   _current: 0
-  power: 10
+  power: 10000
   txtPower: {fileID: 307768353}
   isWin: 0
   isLose: 0
