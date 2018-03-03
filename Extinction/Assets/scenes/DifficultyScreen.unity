@@ -145,8 +145,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -74.5}
-  m_SizeDelta: {x: 260, y: 301.1}
+  m_AnchoredPosition: {x: 0, y: -104.87}
+  m_SizeDelta: {x: 260, y: 361.84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &184601474
 MonoBehaviour:
@@ -183,6 +183,8 @@ MonoBehaviour:
   m_Text: 'Start with 15 Critters
 
     Critters have a 75% chance of duplicating every 5 seconds
+
+    Some Critters have burst
 
     This is the default setting'
 --- !u!222 &184601475

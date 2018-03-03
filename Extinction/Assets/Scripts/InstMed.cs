@@ -17,7 +17,7 @@ public class InstMed : MonoBehaviour {
 
 		System.Random rnd = new System.Random();
 
-		for(int i = 0; i < density; i ++){
+		for(int i = 0; i < density - 1; i ++){
 			int x = rnd.Next(-184, 55);
 			int z = rnd.Next(-117, 94);
 			GameObject newCritterOne = Instantiate(critterOne, new Vector3(x, 16, z), transform.rotation);
