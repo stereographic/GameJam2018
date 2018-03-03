@@ -27,16 +27,27 @@ public class Player : MonoBehaviour {
 	private Camera c;
 	public int power;
 	public Text txtPower;
+	public GameObject quitScreen;
 
 	// Use this for initialization
 	void Start () {
 		c = Camera.main;
 		layerMask = LayerMask.GetMask("critter");
 		txtPower = GameObject.Find("lblPower").GetComponent<Text>();
+
+		quitScreen = GameObject.Find("QuitScreen");
+		quitScreen.SetActive(false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (Input.GetKey("escape")){
+            //SceneManager.LoadScene("QuitScreen");
+			quitScreen.SetActive(true);
+			Time.timeScale = 0;
+		}
+
 		position = c.ScreenToWorldPoint(new Vector3(
 			Input.mousePosition.x,
 			Input.mousePosition.y,
