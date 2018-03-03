@@ -14,6 +14,8 @@ public class Player : MonoBehaviour {
 	private const int PLAGUE_COST = 10;
 	private const int METEOR_COST = 20;
 
+	private const int METEOR_RADIUS = 20;
+
 	public static float population;
 	public GameObject quitScreen;
 	public static float loseCount;
@@ -119,11 +121,7 @@ public class Player : MonoBehaviour {
 	}
 
 	// --------------------------------- get/sets
-	public float Population
-    {
-        get { return population;}
-        set { population = value;}
-    }
+	
 
 	public float LoseCount
     {

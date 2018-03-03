@@ -2815,6 +2815,10 @@ Prefab:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1113932856224468, guid: 284843552a39ff846b667d1102785844, type: 2}
+      propertyPath: m_TagString
+      value: critter
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 284843552a39ff846b667d1102785844, type: 2}
   m_IsPrefabParent: 0
@@ -6356,6 +6360,10 @@ Prefab:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1729704108359390, guid: 7aa4fba8d2091b345811a4c292680a62, type: 2}
+      propertyPath: m_TagString
+      value: critter
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7aa4fba8d2091b345811a4c292680a62, type: 2}
   m_IsPrefabParent: 0
@@ -8863,6 +8871,8 @@ MonoBehaviour:
   _current: 0
   power: 10000
   txtPower: {fileID: 307768353}
+  isWin: 0
+  isLose: 0
 --- !u!1 &952111437
 GameObject:
   m_ObjectHideFlags: 0
@@ -12800,6 +12810,10 @@ Prefab:
         type: 2}
       propertyPath: m_UseGravity
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822449233514484, guid: 6e622791086f63144805cce4dbc36815, type: 2}
+      propertyPath: m_TagString
+      value: critter
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6e622791086f63144805cce4dbc36815, type: 2}
