@@ -11,3 +11,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/scenes/level1.unity
     guid: 550f06d4a20943c4480b58bf621804b1
+  - enabled: 1
+    path: Assets/scenes/DifficultyScreen.unity
+    guid: 5bbee03c38bcc2b44bc3baaa104f17d4
+  - enabled: 1
+    path: Assets/scenes/Easy.unity
+    guid: 319eef5e94004374ea81257ac0e4fee7
+  - enabled: 1
+    path: Assets/scenes/Hard.unity
+    guid: 0db216f148d2e66479b71ba667d793fd
+  - enabled: 1
+    path: Assets/scenes/Loser.unity
+    guid: 40d17a627df537b48b1d329f45855270
+  - enabled: 1
+    path: Assets/scenes/Winner.unity
+    guid: 2210f00f791495042ad76b76cdba990a

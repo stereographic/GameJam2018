@@ -28,6 +28,7 @@ public class QuitScreen : MonoBehaviour {
 
 	public void onRestart(){
 		SceneManager.LoadScene("Level1");
+		//Application.LoadLevel(Application.loadedLevel);
 		Time.timeScale = 1;
 	}
 
@@ -35,5 +36,9 @@ public class QuitScreen : MonoBehaviour {
 		if (Input.GetKey("escape")){
             SceneManager.LoadScene("QuitScreen");
 		}
+	}
+
+	public void onDifficulty(){
+		SceneManager.LoadScene("DifficultyScreen");
 	}
 }
