@@ -14,6 +14,8 @@ public class Player : MonoBehaviour {
 	private const int PLAGUE_COST = 10;
 	private const int METEOR_COST = 20;
 
+	public static float population;
+
 	private Vector3 position;
 	private LayerMask layerMask;
 	public GameObject meteor;
@@ -73,6 +75,12 @@ public class Player : MonoBehaviour {
 	}
 
 	// --------------------------------- get/sets
+	public float Population
+    {
+        get { return population;}
+        set { population = value;}
+    }
+	
 	public int current {
 		get { return _current; }
 		set { _current = value; }

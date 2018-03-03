@@ -18,7 +18,14 @@ public class Duplicator : MonoBehaviour {
 		plag = this.gameObject.GetComponent<CritterWalk>();
 		if (plag.getIsPlagueis() != true)
 		{
-			InvokeRepeating("doubleCritter", initial, after);
+			if (Player.population < 200)
+			{
+				Player.population ++;
+				InvokeRepeating("doubleCritter", initial, after);
+			} else {
+				Player.population --;
+				Destroy(gameObject);
+			}
 		}
 	}
 
@@ -59,6 +66,11 @@ public class Duplicator : MonoBehaviour {
 			Debug.Log("infected");
 			Start();
 			
+		}
+		if (Player.population > 200)
+		{
+			Player.population --;
+			Destroy(gameObject);
 		}
 		if(ran >= 5) {
 			Debug.Log("dubed 5 times");
