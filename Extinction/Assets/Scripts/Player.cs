@@ -142,12 +142,6 @@ public class Player : MonoBehaviour {
         get { return isLose;}
         set { isLose = value;}
     }
-
-	public float Population
-    {
-        get { return population;}
-        set { population = value;}
-    }
 	
 	public int current {
 		get { return _current; }
