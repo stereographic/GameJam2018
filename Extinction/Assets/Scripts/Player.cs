@@ -70,7 +70,7 @@ public class Player : MonoBehaviour {
 		{
 			IsLose = true;
 			Debug.Log("Lose!!!!!!");
-			SceneManager.LoadScene("Loser");
+			SceneManager.LoadScene("Winner - Copy");
 			Population = 0;
 		}
 
